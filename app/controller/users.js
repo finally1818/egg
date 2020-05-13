@@ -9,7 +9,7 @@ function toInt(str) {
 
 class UserController extends Controller {
   async index() {
-    // 测试
+    // 测试仓库
     const ctx = this.ctx
     const query = { limit: toInt(ctx.query.limit), offset: toInt(ctx.query.offset) }
     ctx.body = await ctx.model.User.findAll(query)
